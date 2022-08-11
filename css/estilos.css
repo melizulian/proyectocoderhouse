@@ -15,10 +15,7 @@ body{
 
 }
 header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -42,25 +39,23 @@ header h1{
 
 /*estilos del menu*/
 
-header nav ul{
-    display: flex;
-    column-gap: 0.8rem;
+.bg-menu{
+    background-color: #BD83CE;
+    
 }
 
-header nav ul li{
-    list-style: none;
-    background-color: #BD83CE;
-    display: inline-block;
-    box-shadow: 4px 2px 2px #E5B0EA;
-    padding-block: 4px;
-    padding: 7px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-variant-caps: all-small-caps;
-    font-size: 0.6rem;
-    margin: 0.05rem;
-    border-radius: 25px;
+.logo{
+    max-height: 2rem;
+    
 }
+
+.lemonpie{
+    margin-right: 16rem;
+}
+
+
+
+
 
 /*tienda*/
 
