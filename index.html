@@ -14,7 +14,7 @@
     <title> Home - Lemon Pie </title>
 </head>
 <body id="head">
-    <header>
+    <header class="menu-sticky">
         <nav class="navbar navbar-expand-lg bg-menu sticky-md-top sticky-lg-top">
             <div class="container-fluid">
               <a class="navbar-brand lemonpie" href="#"> <img class="logo" src="img/pie.png" alt=""> Lemon Pie </a>
@@ -49,42 +49,53 @@
    <main class="main-index">
         <h2 class="favoritas">Las favoritas del mes</h2>
 
-        
-            <div class="imagen-uno">
-                <h3 class="articulo"> Brownie </h3>
-                <img class="imgindex" src="img/brownie.jpg" alt="porcion de brownie">
-                <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem rem maxime aliquam neque ipsam aspernatur, ipsum voluptas aperiam perspiciatis praesentium ut cum labore fugit saepe quibusdam dolore nemo quam debitis?</p>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-main" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./img/lemonpie2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lemon Pie</h5>
+                
+              </div>
             </div>
-        
-            <div class="imagen-dos">
-                <h3 class="articulo"> Lemon Pie </h3>
-                <img class="imgindex" src="img/lemonpie porcion.jpg" alt="Porcion de Lemon Pie">
-                <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, facere quidem! Similique dolor recusandae velit iusto sunt. Perspiciatis exercitationem laudantium quo iusto qui eligendi, facere enim ea minus consequatur ut.</p>
-            </div>   
-
-            <div class="imagen-tres">
-                <h3 class="articulo"> Chocotorta </h3>
-                <img class="imgindex" src="img/chocotorta.jpg" alt="Porcion de Chocotorta">
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptas maxime aspernatur non nesciunt exercitationem, nihil molestias quisquam maiores quod eos. Qui debitis aspernatur non voluptatibus sed, accusamus fuga dolor.</p>
-            </div>    
-        
-            <div class="imagen-cuatro">
-                <h3 class="articulo"> Cheesecake </h3>
-                <img class="imgindex" src="img/cheesecake.jpg" alt="Porcion de Cheesecake">
-                <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi incidunt, quam eius officia obcaecati quasi, voluptatibus vitae suscipit magni perspiciatis omnis mollitia atque repellendus reprehenderit officiis harum dolorem, aliquam voluptatum.</p>
-            </div>    
-
-            <div class="imagen-cinco">
-                <h3 class="articulo"> Alfajores de maicena </h3>
-                <img class="imgindex" src="img/alfajormaicena.jpg" alt="alfajor de maicena">
-                <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi incidunt, quam eius officia obcaecati quasi, voluptatibus vitae suscipit magni perspiciatis omnis mollitia atque repellendus reprehenderit officiis harum dolorem, aliquam voluptatum.</p>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./img/cheesecake2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Cheesecake</h5>
+                
+              </div>
             </div>
+            <div class="carousel-item">
+              <img src="./img/brownieoreo.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Torta Brownie Oreo</h5>
+                
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div>
+          <p class="p-index">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur veniam veritatis saepe modi unde quam corporis autem! Natus ullam dicta quam fugiat mollitia aliquid accusantium! Sit excepturi fuga soluta fugiat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat earum provident quas porro quam rem quod nulla culpa sunt hic perspiciatis aspernatur vero laborum sint ducimus, facilis officiis impedit tenetur.
+          </p>
+        </div>
+        
             
-            <div class="imagen-seis">
-                <h3 class="articulo"> Linzertorte </h3>
-                <img class="imgindex" src="img/linzertorte.jpg" alt="Linzertorte">
-                <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi incidunt, quam eius officia obcaecati quasi, voluptatibus vitae suscipit magni perspiciatis omnis mollitia atque repellendus reprehenderit officiis harum dolorem, aliquam voluptatum.</p>
-            </div>    
     </main>
 
 

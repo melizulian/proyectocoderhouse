@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title> Tienda - Lemon Pie </title>
 </head>
+
 <body id="head">
    <body id="head">
-    <header>
+    <header class="menu-sticky">
         <nav class="navbar navbar-expand-lg bg-menu sticky-md-top sticky-lg-top">
             <div class="container-fluid">
               <a class="navbar-brand lemonpie" href="#"> <img class="logo" src="../img/pie.png" alt=""> Lemon Pie </a>
@@ -49,67 +50,107 @@
     <main class="main-tienda">
         
          <h2 class="bienvenidos"> Bienvenidos a nuestra tienda online! </h2>
-         <p class="textotienda"> Te invitamos a que recorras todo el sitio y elijas los productos que más te gusten para disfrutar en casa :)</p>
+         <p class="textotienda"> Elegí los productos que más te gusten para disfrutar en casa, nosotros te los llevamos </p>
        
-
-        <div class="imagen-tienda">
-            <img class="tienda-laptop" src="../img/tienda.png" alt="Tienda online">
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/lemonpie porcion.jpg" class="card-img-top" alt="porcion de lemon pie">
+              <div class="card-body">
+                <h5 class="card-title">Lemon Pie</h5>
+                <p class="card-text">
+                  Masa sablé de vainilla, rellena de exquisito curd de limon y cubierta de merengue italiano. Un clásico para cualquier ocasión. <br>
+                  Rinde de 8 a 10 porciones. <br>
+                  $2850
+                </p>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn boton-agregar" type="button">Agregar al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/brownie.jpg" class="card-img-top" alt="porcion de brownie">
+              <div class="card-body">
+                <h5 class="card-title">Torta Brownie</h5>
+                <p class="card-text">
+                  Brownie de chocolate al 80%, con dulce de leche repostero, crema chantilly, merengue italiano y tejas de chocolate con leche. <br>
+                  Rinde 12 porciones. <br>
+                  $3100
+                </p>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn boton-agregar" type="button">Agregar al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/cheesecake.jpg" class="card-img-top" alt="Cheesecake">
+              <div class="card-body">
+                <h5 class="card-title">Cheesecake de Frutos Rojos</h5>
+                <p class="card-text">
+                  Base de galletitas molidas de vainilla, sedosa crema de queso, cubierta de jalea de frutos rojos, y frutos rojos frescos. <br>
+                  Rinde 10 porciones. <br>
+                  $2700
+                </p>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn boton-agregar" type="button">Agregar al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/alfajormaicena.jpg" class="card-img-top" alt="alfajorcitos de maicena">
+              <div class="card-body">
+                <h5 class="card-title">Alfajorcitos de maicena</h5>
+                <p class="card-text">
+                  El clásico alfajor, hecho con tapitas de almidón de maíz, relleno de abundante dulce de leche repostero y decorado con coco rallado. <br>
+                  Por docena. <br>
+                  $900
+                </p>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn boton-agregar" type="button">Agregar al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/linzertorte3.jpg" class="card-img-top" alt="linzertorte">
+              <div class="card-body">
+                <h5 class="card-title">Linzertorte</h5>
+                <p class="card-text">
+                  Tarta de origen austríaco-húngaro. Masa saborizada con canela, relleno de jalea de frambuesa, decorado con azúcar glass. Una delicia. <br>
+                  Rinde 20 porciones. <br>
+                  $3600
+                </p>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn boton-agregar" type="button">Agregar al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/chocotorta.jpg" class="card-img-top" alt="chocotorta">
+              <div class="card-body">
+                <h5 class="card-title">Chocotorta</h5>
+                <p class="card-text">
+                  La favorita de muchos. La clásica torta de galletitas de chocolate, rellena de deliciosa crema de dulce de leche, decorada con chocolate rallado. <br>
+                  Rinde 20 porciones. <br>
+                  $2950
+                </p>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn boton-agregar" type="button">Agregar al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="articulo-uno">
-            <h3 class="arttienda"> Lemon Pie </h3>
-            <img class="imgtienda" src="../img/lemonpie porcion.jpg" alt="Porcion de Lemon Pie">
-            <p class="precio"> $2750 </p>
-            <div class="agregar">
-                <input type="submit" value="Agregar al carrito">
-            </div>
-            
-        </div>    
-
-        <div class="articulo-dos">
-            <h3 class="arttienda"> Chocotorta </h3>
-            <img class="imgtienda" src="../img/chocotorta.jpg" alt="Chocotorta">
-            <p class="precio"> $2500 </p>
-            <div class="agregar">
-                <input type="submit" value="Agregar al carrito">
-            </div>
-        </div>    
-
-        <div class="articulo-tres">
-            <h3 class="arttienda"> Alfajorcitos de maicena </h3>
-            <img class="imgtienda" src="../img/alfajormaicena.jpg" alt="Chocotorta">
-            <p class="precio"> $900 la docena </p>
-            <div class="agregar">
-                <input type="submit" value="Agregar al carrito">
-            </div>
-        </div>   
-
-        <div class="articulo-cuatro">
-            <h3 class="arttienda"> Linzertorte </h3>
-            <img class="imgtienda" src="../img/linzertorte.jpg" alt="Chocotorta">
-            <p class="precio"> $2900 </p>
-            <div class="agregar">
-                <input type="submit" value="Agregar al carrito">
-            </div>
-        </div>   
-
-        <div class="articulo-cinco">
-            <h3 class="arttienda"> Cheesecake </h3>
-            <img class="imgtienda" src="../img/cheesecake.jpg" alt="Chocotorta">
-            <p class="precio"> $3200 </p>
-            <div class="agregar">
-                <input type="submit" value="Agregar al carrito">
-            </div>
-        </div>   
-
-        <div class="articulo-seis">
-            <h3 class="arttienda"> Chaja </h3>
-            <img class="imgtienda" src="../img/chaja.jpg" alt="Chocotorta">
-            <p class="precio"> $3800</p>
-            <div class="agregar">
-                <input type="submit" value="Agregar al carrito">
-            </div>
-        </div>   
+        
 
 
     </main>
