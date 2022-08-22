@@ -16,7 +16,7 @@
     <header class="menu-sticky">
         <nav class="navbar navbar-expand-lg bg-menu sticky-md-top sticky-lg-top">
             <div class="container-fluid">
-              <a class="navbar-brand lemonpie" href="#"> <img class="logo logo-animado" src="../img/pie.png" alt=""> Lemon Pie </a>
+              <a class="navbar-brand lemonpie" href="#"> <img class="logo" src="../img/pie.png" alt=""> Lemon Pie </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -39,14 +39,18 @@
                   </li>
                 </ul>
               </div>
+              <button type="button" class="btn btn-cart"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
             </div>
           </nav>
    </header>
     
 
-    <main>
+      <main>
         <h2 class="titulocontacto"> Contacto </h2>
-        <form class="formulario">
+        <div>
+          <form class="formulario">
              <fieldset>
                     <legend class="tituloformulario"> Formulario de Contacto </legend>
 
@@ -61,27 +65,38 @@
                     </label>
                     <input type="email" name="email" id="email" placeholder="E-mail">
                 </div>
-
+                <div class="form-telefono">
+                  <label for="nombre">Teléfono</label>
+                  <input type="text" name="telefono" id="telefono" placeholder="Número de teléfono">
+              </div>
                 <div class="form-localidad">
                     <label for="Localidad">
                     Localidad
                     </label>
-                    <select name="Localidad" id="">
+                    <select name="Localidad" id="" class="input">
                         <option value="Rosario">Rosario</option>
                         <option value="San Lorenzo">San Lorenzo</option>
                         <option value="Funes">Funes</option>
                         <option value="Roldan">Roldán</option>
                     </select>
                 </div>
+                <div class="form-mensaje">
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                    </label>                     
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Dejanos tu consulta..."></textarea>
+              </div>
+
 
                 <div class="botones">
                     <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
                 </div>
             </fieldset>
-        </form>
-    </main>
+          </form>
+          
     
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.4321737513624!2d-60.63796060000001!3d-32.9395975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab23102b344b%3A0x4dd5aa329b2d78e2!2sMitre%20230%2C%20S2000COD%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1660945292259!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </main>
 
     <footer class="footer">
         <p>
