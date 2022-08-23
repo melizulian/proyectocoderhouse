@@ -1,59 +1,54 @@
-/*reset*/
+@import "base/listas";
+@import "base/variables";
 
+/*reset*/
 *{
     margin: 0;
-    padding: 0;
+    padding: 0%;
     box-sizing: border-box;
 }
 
 /*ajustes generales*/
-
 body{
-    background-image: linear-gradient(to bottom, #F7E8F6, #F1C6E7, #E5B0EA, #BD83CE);
+    background-image: linear-gradient(to bottom, $color-uno, $color-dos, $color-tres, $color-cuatro);
     color: black;
-    
-
-}
-header{
-    
-    padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-header h1{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
 }
-
-
-.footer{
-    background-color: #BD83CE;
-    color: white;
-    margin-top: 20rem;
+footer{
+    background-color: $color-cuatro;
+    color: $color-cinco;
+    margin-top: 15rem;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1rem;
 }
 
 .arriba{
-    font-size: large;
+    font-size: 1.3rem;
 }
 
 /*estilos del menu*/
 
 .bg-menu{
-    background-color: #BD83CE;
-    
+    background-color: $color-cuatro;
 }
 
 .logo{
     max-height: 2rem;
-    
 }
 
 .lemonpie{
     margin-right: 14rem;
     font-size: 1.5rem;
     padding: 0.5rem;
-    color: #F1C6E7;
+    color: $color-dos;
 }
 
 .menu-sticky{
@@ -63,17 +58,17 @@ header h1{
 }
 
 .btn-cart{
-    color: #F1C6E7;
+    color: $color-dos;
 }
 
 .nav-item:hover{
     display: inline-block;
-	animation-name: menuanimado;
+    animation-name: menuanimado;
     animation-duration: 0.75s;
     animation-iteration-count: initial;
-	transform-origin: center;
-    background-color: #F1C6E7;
+    transform-origin: center;
     border-radius: 25px;
+    background-color: $color-dos;
 }
 
 @keyframes menuanimado{
@@ -86,20 +81,17 @@ header h1{
 }
 
 /*tienda*/
-
 .bienvenidos{
     grid-area: bienvenidos;
     padding-bottom: 0.5rem;
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
-    color: #BD83CE;
-    
-    
+    color: $color-cuatro;
 }
 
 .boton-agregar{
-    background-color: #BD83CE;
+    background-color: $color-cuatro;
     font-weight: bold;
     width: 100%;
 }
@@ -123,7 +115,6 @@ header h1{
     text-align: center;
 }
 
-
 /*recetas*/
 
 .titulorecetas{
@@ -132,7 +123,7 @@ header h1{
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
-    color: #BD83CE;
+    color: $color-cuatro;
     margin: 1rem;
 }
 
@@ -142,18 +133,17 @@ header h1{
     font-size: 1.5rem;
     font-variant-caps: all-small-caps;
     text-align: center;
-    color: #BD83CE;
+    color: $color-cuatro;
 }
 
 .contenedor-videos{
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     grid-template-areas: "titulorecetas titulorecetas"
-                         "video-uno video-dos"
-                         "video-tres video-cuatro"       ;
+    "video-uno video-dos"
+    "video-tres video-cuatro";
     margin: 3rem;
-    
 }
 
 .video-uno{
@@ -190,8 +180,6 @@ header h1{
 }
 /* End: Video Responsive */
 
-
-
 /*como comprar*/
 
 .titulocomocomprar{
@@ -199,7 +187,7 @@ header h1{
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
-    color: #BD83CE;
+    color: $color-cuatro;
     margin: 1rem;
 }
 
@@ -213,32 +201,19 @@ header h1{
     margin: 15px;
     font-variant-caps: all-small-caps;
     font-size: x-large;
-    
 }
 
 .text{
-    font-size: larger;
+    font-size: large;
     font-style: italic;
 }
 
 /*index*/
 
 body h2{
-    
     font-variant-caps: all-small-caps;
     font-size: 2.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.favoritas{
-    grid-area: favoritas;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #BD83CE;
-    line-height: 2rem;
 }
 
 .carousel-main{
@@ -274,9 +249,9 @@ body h2{
 .unidad{
     max-width: 400px;
 }
+
 .imagen-index{
     max-width: 23rem;
-    
 }
 
 /*contacto*/
@@ -286,7 +261,13 @@ body h2{
     font-weight: bold;
     font-size: 3rem;
     margin: 0.5rem;
-    color: #BD83CE;
+    color: $color-cuatro;
+}
+
+.pagina-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formulario{
@@ -299,38 +280,37 @@ body h2{
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
-    background-color: #F7E8F6;
-    padding-left: 30px; 
-    
+    background-color: $color-uno;
+    padding-left: 30px;
 }
 
 input{
-    background-color: #fff7fd; 
+    background-color: $color-uno; 
     width: 408px; 
     height: 40px; 
     border-radius: 5px;  
     border-style: solid; 
     border-width: 1px; 
-    border-color: #BD83CE; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-
-select{
-    background-color: #fff7fd; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #BD83CE; 
+    border-color: $color-cuatro; 
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
 }
 
-  textarea{
+select{
+    background-color: $color-uno;
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: $color-cuatro; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+textarea{
     background-color: #fbfbfb; 
     width: 405px; 
     height: 150px; 
@@ -342,16 +322,20 @@ select{
     padding-left: 10px;
     margin-bottom: 20px; 
     padding-top: 15px; 
-  }
+}
 
 .tituloformulario{
     font-size: 1.75rem;
     color: #b46cca;
 }
 
-.form-nombre, .form-email, .form-localidad, .form-telefono, .form-mensaje{
-    font-size: 1.2rem;
+.donde-estamos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
     color: #b46cca;
+    text-align: center;
 }
 
 /*mediaqueries*/
@@ -386,9 +370,18 @@ select{
    .youtube{
     max-height: fit-content;
    }
+
+   /*contacto*/
+   .pagina-contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .mapa{
+        max-width: 400px;
+    }
 }
-
-
 @media screen and (min-width:600px) and (max-width:1023px){
     header h1{
         font-size: 3rem;
@@ -444,8 +437,14 @@ select{
     .youtube{
         max-width: 80%;
     }
-}
 
+    /*contacto*/
+    .pagina-contacto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
 @media screen and (min-width:1024px){
     
     /*menu*/
@@ -476,9 +475,17 @@ select{
     z-index: 1;
     }
    
-
    
    /*recetas*/
 
+   /*contacto*/
    
+   .pagina-contacto{
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .mapa{
+        padding: 1rem;
+        margin: 1rem;
+    }
 
