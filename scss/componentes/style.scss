@@ -1,5 +1,4 @@
-@import "base/listas";
-@import "base/variables";
+@import "base/partial";
 
 /*reset*/
 *{
@@ -11,17 +10,10 @@
 /*ajustes generales*/
 body{
     background-image: linear-gradient(to bottom, $color-uno, $color-dos, $color-tres, $color-cuatro);
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include text;
     main{
         h1{
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-variant-caps: all-small-caps;
-            color: $color-cuatro;
-            font-weight: bold;
-            text-align: center;
-            margin: 1.5rem;
+            @include titles;
         }
     }
 }
@@ -29,17 +21,32 @@ body{
 footer{
     background-color: $color-cuatro;
     color: $color-cinco;
-    margin-top: 15rem;
+    margin-top: 10rem;
     text-align: center;
-    line-height: 1rem;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    h3{
+        font-size: 1rem;
+    }
+    
 }
 
 .arriba{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 .whatsapp-icono:hover{
     opacity: 0.7;
+}
+
+.whatsapp-icono{
+    position: fixed;
+    right: 1rem;
+    top: 75%;
+    z-index: 3;
 }
 
 /*estilos del menu*/
@@ -197,9 +204,8 @@ ol{
             color: $color-cuatro;
         }
         p{
-            color: black;
             padding: 1rem;
-            font-size: 1.25rem;
+            @include text;
         }
     }
     }
@@ -211,40 +217,45 @@ ol{
     font-size: x-large;
 }
 
-.text{
-    font-size: large;
-    font-style: italic;
+.imagenes-pasos{
+    @extend %flexrow;
+    margin: 2rem;
+}
+
+.imagen-pasos{
+    width: 150px;
 }
 
 /*index*/
-
 
 .carousel-main{
     margin: 1.5rem;
 }
 
 .p-index{
-    margin: 1rem;
-    text-align: center;
+    margin: 2rem;
+    @include text;
 }
 
 .titulo-imagen{
     margin-top: 1rem;
     padding: 0.5rem;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-justify: inherit;
 }
 
 .parrafo-index{
     margin: 0.5rem;
     padding: 0.5rem;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 .imagenes-index{
-    display: flex;
-    flex-direction: row;
+    @extend %flexrow;
     align-items: stretch;
-    justify-content: space-between;
     margin: 1rem;
     padding: 1rem;
 }
@@ -254,15 +265,13 @@ ol{
 }
 
 .imagen-index{
-    max-width: 23rem;
+    max-width: 24rem;
 }
 
 /*contacto*/
 
 .pagina-contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flexcolumn;
 }
 
 .formulario{
@@ -334,6 +343,10 @@ textarea{
     text-align: center;
 }
 
+.texto-donde-estamos{
+    @include text;
+}
+
 /*mediaqueries*/
 
 @media screen and (max-width:599px){
@@ -352,15 +365,18 @@ textarea{
     }
 
     .imagenes-index{
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        align-content: center;
     }
     
     /*recetas*/
    .contenedor-videos{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
    }
 
    .youtube{
@@ -371,11 +387,18 @@ textarea{
    .pagina-contacto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     }
 
     .mapa{
         max-width: 400px;
+    }
+
+    /*como comprar*/
+    .imagenes-pasos{
+        display: none;
     }
 }
 @media screen and (min-width:600px) and (max-width:1023px){

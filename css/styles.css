@@ -1,3 +1,14 @@
+.pagina-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+
+.imagenes-pasos, .imagenes-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 /*reset*/
 * {
   margin: 0;
@@ -7,9 +18,13 @@
 /*ajustes generales*/
 body {
   background-image: linear-gradient(to bottom, #F7E8F6, #F1C6E7, #E5B0EA, #BD83CE);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem; }
   body main h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-variant-caps: all-small-caps;
@@ -21,15 +36,27 @@ body {
 footer {
   background-color: #BD83CE;
   color: white;
-  margin-top: 15rem;
+  margin-top: 10rem;
   text-align: center;
-  line-height: 1rem; }
+  position: sticky;
+  bottom: 0;
+  z-index: 2; }
+  footer h3 {
+    font-size: 1rem; }
 
 .arriba {
-  font-size: 1.3rem; }
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  text-align: center; }
 
 .whatsapp-icono:hover {
   opacity: 0.7; }
+
+.whatsapp-icono {
+  position: fixed;
+  right: 1rem;
+  top: 75%;
+  z-index: 3; }
 
 /*estilos del menu*/
 .bg-menu {
@@ -153,42 +180,52 @@ ol {
     font-size: 2rem;
     color: #BD83CE; }
   ol li p {
-    color: black;
     padding: 1rem;
-    font-size: 1.25rem; }
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem; }
 
 .item {
   margin: 15px;
   font-variant-caps: all-small-caps;
   font-size: x-large; }
 
-.text {
-  font-size: large;
-  font-style: italic; }
+.imagenes-pasos {
+  margin: 2rem; }
+
+.imagen-pasos {
+  width: 150px; }
 
 /*index*/
 .carousel-main {
   margin: 1.5rem; }
 
 .p-index {
-  margin: 1rem;
-  text-align: center; }
+  margin: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem; }
 
 .titulo-imagen {
   margin-top: 1rem;
   padding: 0.5rem;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-justify: inherit; }
 
 .parrafo-index {
   margin: 0.5rem;
   padding: 0.5rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.1rem; }
 
 .imagenes-index {
-  display: flex;
-  flex-direction: row;
   align-items: stretch;
-  justify-content: space-between;
   margin: 1rem;
   padding: 1rem; }
 
@@ -196,14 +233,9 @@ ol {
   max-width: 400px; }
 
 .imagen-index {
-  max-width: 23rem; }
+  max-width: 24rem; }
 
 /*contacto*/
-.pagina-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .formulario {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-variant-caps: all-small-caps;
@@ -267,6 +299,13 @@ textarea {
   color: #b46cca;
   text-align: center; }
 
+.texto-donde-estamos {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem; }
+
 /*mediaqueries*/
 @media screen and (max-width: 599px) {
   /*index*/
@@ -278,12 +317,15 @@ textarea {
   .parrafo-index {
     margin-bottom: 1rem; }
   .imagenes-index {
+    display: flex;
     flex-direction: column;
-    align-items: center; }
+    justify-content: center;
+    align-content: center; }
   /*recetas*/
   .contenedor-videos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center; }
   .youtube {
     max-height: fit-content; }
@@ -291,9 +333,14 @@ textarea {
   .pagina-contacto {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap; }
   .mapa {
-    max-width: 400px; } }
+    max-width: 400px; }
+  /*como comprar*/
+  .imagenes-pasos {
+    display: none; } }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   header h1 {
