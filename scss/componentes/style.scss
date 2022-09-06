@@ -22,7 +22,7 @@ footer{
     background-color: $color-cuatro;
     color: $color-cinco;
     margin-top: 10rem;
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
     position: sticky;
     bottom: 0;
     z-index: 2;
@@ -35,7 +35,7 @@ footer{
 .arriba{
     font-size: 1.2rem;
     margin-top: 3rem;
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
 }
 
 .whatsapp-icono:hover{
@@ -104,8 +104,8 @@ footer{
 }
 
 .textotienda{
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: map-get($map: $texto, $key: f-size );
+    text-align: map-get($map: $texto, $key: t-align);
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -115,11 +115,11 @@ footer{
 }
 
 .card-title{
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
 }
 
 .card-text{
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
 }
 
 //recetas
@@ -134,7 +134,7 @@ footer{
     font-weight: bold;
     font-size: 1.5rem;
     font-variant-caps: all-small-caps;
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
     color: $color-cuatro;
 }
 
@@ -195,7 +195,7 @@ ol{
     padding-top: 30px;
     padding-bottom: 20px;  
     background-image: url(../img/lemon-fondo.png);
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
     li{
         h2{
             font-variant-caps: all-small-caps;
@@ -240,7 +240,7 @@ ol{
 .titulo-imagen{
     margin-top: 1rem;
     padding: 0.5rem;
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
     font-weight: bold;
     font-size: 1.5rem;
     text-justify: inherit;
@@ -249,7 +249,7 @@ ol{
 .parrafo-index{
     margin: 0.5rem;
     padding: 0.5rem;
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
     font-size: 1.1rem;
 }
 
@@ -340,7 +340,7 @@ textarea{
     font-variant-caps: all-small-caps;
     font-weight: bold;
     color: #b46cca;
-    text-align: center;
+    text-align: map-get($map: $texto, $key: t-align);
 }
 
 .texto-donde-estamos{
