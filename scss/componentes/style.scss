@@ -1,13 +1,13 @@
 @import "base/partial";
 
-/*reset*/
+//reset
 *{
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
 
-/*ajustes generales*/
+//ajustes generales
 body{
     background-image: linear-gradient(to bottom, $color-uno, $color-dos, $color-tres, $color-cuatro);
     @include text;
@@ -49,7 +49,7 @@ footer{
     z-index: 3;
 }
 
-/*estilos del menu*/
+//estilos del menu
 
 .bg-menu{
     background-color: $color-cuatro
@@ -95,7 +95,7 @@ footer{
     }
 }
 
-/*tienda*/
+//tienda
 
 .boton-agregar{
     background-color: $color-cuatro;
@@ -122,7 +122,7 @@ footer{
     text-align: center;
 }
 
-/*recetas*/
+//recetas
 
 .titulorecetas{
     grid-area: titulorecetas;
@@ -164,7 +164,7 @@ footer{
     grid-area: video-cuatro;
 }
 
-/* Start: Video Responsive */
+// Start: Video Responsive 
 .video-responsive {
     overflow:hidden;
     padding-bottom:300px; 
@@ -180,9 +180,9 @@ footer{
     width:100%;
     position:absolute;
 }
-/* End: Video Responsive */
+// End: Video Responsive 
 
-/*como comprar*/
+//como comprar
 
 
 ol{
@@ -226,7 +226,7 @@ ol{
     width: 150px;
 }
 
-/*index*/
+//index
 
 .carousel-main{
     margin: 1.5rem;
@@ -268,7 +268,7 @@ ol{
     max-width: 24rem;
 }
 
-/*contacto*/
+//contacto
 
 .pagina-contacto{
     @extend %flexcolumn;
@@ -347,10 +347,10 @@ textarea{
     @include text;
 }
 
-/*mediaqueries*/
+//mediaqueries
 
 @media screen and (max-width:599px){
-    /*index*/
+    //index
     .lemonpie{
         margin-right: 8rem;
     }
@@ -371,7 +371,7 @@ textarea{
         align-content: center;
     }
     
-    /*recetas*/
+    //recetas
    .contenedor-videos{
         display: flex;
         flex-direction: column;
@@ -383,7 +383,7 @@ textarea{
     max-height: fit-content;
    }
 
-   /*contacto*/
+   //contacto
    .pagina-contacto{
     display: flex;
     flex-direction: column;
@@ -396,7 +396,7 @@ textarea{
         max-width: 400px;
     }
 
-    /*como comprar*/
+    //como comprar
     .imagenes-pasos{
         display: none;
     }
@@ -410,7 +410,7 @@ textarea{
         font-size: 1.5rem;
     }
 
-    /*index*/
+    //index
 
     .bienvenidos{
         font-size: 3rem;
@@ -440,7 +440,7 @@ textarea{
         justify-items: center;
     }
 
-    /*recetas*/
+    //recetas
     
     .contenedor-videos{
         display: flex;
@@ -453,7 +453,7 @@ textarea{
         max-width: 80%;
     }
 
-    /*contacto*/
+    //contacto
     .pagina-contacto{
         display: flex;
         flex-direction: column;
@@ -462,7 +462,7 @@ textarea{
 }
 @media screen and (min-width:1024px){
     
-    /*menu*/
+    //menu
     
     header{
         nav{
@@ -474,13 +474,13 @@ textarea{
         }
     }
 }
-    /*index*/  
+    //index
 
    .p-index{
     font-size: 1.5rem;
     padding: 0.5rem;
    }
-   /*carrusel*/
+   //carrusel
 
     .carousel-main{
     margin-top: 2rem;
@@ -488,9 +488,9 @@ textarea{
     }
    
    
-   /*recetas*/
+   //recetas
 
-   /*contacto*/
+   //contacto
    
    .pagina-contacto{
     flex-direction: row;
