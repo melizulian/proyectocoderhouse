@@ -69,6 +69,8 @@ footer{
 .menu-sticky{
     position: sticky;
     top: 0;
+    margin: 0;
+    padding: 0;
     z-index: 2;
 }
 
@@ -261,11 +263,11 @@ ol{
 }
 
 .unidad{
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .imagen-index{
-    max-width: 24rem;
+    max-width: 35vh;
 }
 
 //contacto
@@ -280,7 +282,7 @@ ol{
     font-weight: bold;
     width: 460px; 
     height: auto;
-    margin: 2rem;
+    margin: 0.5rem;
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
@@ -300,6 +302,7 @@ input{
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
+    
 }
 
 select{
@@ -329,6 +332,10 @@ textarea{
     padding-top: 15px; 
 }
 
+textarea, select, input{
+    margin-right: 2rem;
+}
+
 .tituloformulario{
     font-size: 1.75rem;
     color: #b46cca;
@@ -340,12 +347,22 @@ textarea{
     font-variant-caps: all-small-caps;
     font-weight: bold;
     color: #b46cca;
+    margin-top: 2rem;
     text-align: map-get($map: $texto, $key: t-align);
 }
 
 .texto-donde-estamos{
     @include text;
+    margin: 1.5rem;
+    
 }
+
+.lugar{
+    width: 60%;
+    margin-left: 1rem;
+}
+
+
 
 //mediaqueries
 
@@ -357,7 +374,7 @@ textarea{
 
     .imagen-index{
         justify-content: center;
-        margin-left: 2rem;
+        width: 30vh;
     }
 
     .parrafo-index{
@@ -370,7 +387,7 @@ textarea{
         justify-content: center;
         align-content: center;
     }
-    
+
     //recetas
    .contenedor-videos{
         display: flex;
@@ -392,8 +409,22 @@ textarea{
     flex-wrap: wrap;
     }
 
+    .formulario{
+        width: 40vh;
+    }
+
+    input, select, textarea{
+        width: 30vh;
+       margin-right: 4vh; 
+    }
+
+    .donde-estamos, .texto-donde-estamos{
+        width: 40vh;
+    }
+
     .mapa{
-        max-width: 400px;
+        max-width: 40vh;
+        justify-content: space-around;
     }
 
     //como comprar
@@ -431,13 +462,12 @@ textarea{
 
     
     .imagen-index{
-        margin-left: 10rem;
-        max-width: 25rem;
+        width: 40vh;
     }
 
     .imagenes-index{
         flex-direction: column;
-        justify-items: center;
+        justify-content: space-around;
     }
 
     //recetas
@@ -458,6 +488,14 @@ textarea{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .mapa{
+        width: fit-content;
+    }
+
+    .formulario{
+        width: 80vh;
     }
 }
 @media screen and (min-width:1024px){
@@ -486,9 +524,7 @@ textarea{
     margin-top: 2rem;
     z-index: 1;
     }
-   
-   
-   //recetas
+  
 
    //contacto
    
@@ -496,8 +532,11 @@ textarea{
     flex-direction: row;
     justify-content: space-between;
     }
+
+    .lugar{
+        width: 100vh;
+    }
     .mapa{
-        padding: 1rem;
-        margin: 1rem;
+        width: 80vh;
     }
 
