@@ -334,9 +334,10 @@ textarea, select, input {
     align-content: center;
     flex-wrap: wrap; }
   .formulario {
-    width: 50vh; }
+    width: 45vh;
+    justify-content: space-around; }
   input, select, textarea {
-    width: 40vh;
+    width: 37vh;
     margin-right: 4vh; }
   .donde-estamos, .texto-donde-estamos {
     width: 40vh; }
